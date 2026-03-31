@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nido — Find Your Perfect Apartment</title>
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =============================================
+       NAVBAR
+  ============================================= -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+
+        <!-- Logo -->
+        <a href="#" class="logo">
+          <span class="logo-dot"></span>
+          Nido
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#apartments">Apartments</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+        </ul>
+
+        <!-- Mobile hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile dropdown -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#hero">Home</a>
+      <a href="#apartments">Apartments</a>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- =============================================
+       HERO
+  ============================================= -->
+  <section id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          <i class="fa-solid fa-location-dot"></i>
+          Trusted by 12,000+ happy renters
+        </div>
+
+        <h1 class="hero-title">
+          Find Your<br>
+          <em>Perfect</em> Apartment
+        </h1>
+
+        <p class="hero-sub">
+          Premium, fully furnished apartments in prime city locations.
+          Seamless booking, transparent pricing, no hidden fees.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#apartments" class="btn-primary">
+            View Apartments <i class="fa-solid fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn-ghost">
+            <i class="fa-regular fa-calendar"></i> Schedule a Tour
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">500+</span>
+            <span class="hero-stat-label">Listings</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">40+</span>
+            <span class="hero-stat-label">Neighborhoods</span>
+          </div>
+          <div class="hero-stat-item">
+            <span class="hero-stat-num">98%</span>
+            <span class="hero-stat-label">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-slice"></div>
+  </section>
+
+  <!-- =============================================
+       SEARCH BAR
+  ============================================= -->
+  <section class="search-bar-wrap">
+    <div class="container">
+      <div class="search-bar reveal">
+        <div class="search-field">
+          <label>Location</label>
+          <select>
+            <option>Any City</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+            <option>Miami</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Property Type</label>
+          <select>
+            <option>Any Type</option>
+            <option>Studio</option>
+            <option>1 Bedroom</option>
+            <option>2 Bedrooms</option>
+            <option>Penthouse</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label>Max Price / mo</label>
+          <input type="number" placeholder="e.g. 3000" />
+        </div>
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> Search
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       APARTMENTS SECTION
+  ============================================= -->
+  <section id="apartments">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div>
+          <span class="section-label">Our Listings</span>
+          <h2 class="section-title">Featured Apartments</h2>
+        </div>
+        <a href="#" class="view-all">View All Listings <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+
+      <div class="apartments-grid">
+
+        <!-- Card 1 -->
+        <div class="apt-card reveal">
+          <div class="apt-img-wrap">
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=700&q=80" alt="Skyline Loft" loading="lazy" />
+            <span class="apt-badge badge-hot">🔥 Hot Deal</span>
+            <button class="apt-fav" aria-label="Save favourite"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="apt-body">
+            <div class="apt-location"><i class="fa-solid fa-location-dot"></i> Manhattan, New York</div>
+            <h3 class="apt-name">Skyline Loft Studio</h3>
+            <p class="apt-desc">Modern open-plan studio with floor-to-ceiling windows and breathtaking city views. Fully furnished and move-in ready.</p>
+            <div class="apt-amenities">
+              <span class="amenity"><i class="fa-solid fa-bed"></i> Studio</span>
+              <span class="amenity"><i class="fa-solid fa-bath"></i> 1 Bath</span>
+              <span class="amenity"><i class="fa-solid fa-ruler-combined"></i> 540 ft²</span>
+            </div>
+            <div class="apt-footer">
+              <div class="apt-price">$2,400 <span>/ month</span></div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="apt-card reveal">
+          <div class="apt-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=700&q=80" alt="Park Avenue Suite" loading="lazy" />
+            <span class="apt-badge badge-available">Available</span>
+            <button class="apt-fav" aria-label="Save favourite"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="apt-body">
+            <div class="apt-location"><i class="fa-solid fa-location-dot"></i> Brooklyn, New York</div>
+            <h3 class="apt-name">Park Avenue Suite</h3>
+            <p class="apt-desc">Elegant 2-bedroom apartment steps from Prospect Park. Premium finishes, in-unit laundry, and private balcony.</p>
+            <div class="apt-amenities">
+              <span class="amenity"><i class="fa-solid fa-bed"></i> 2 Beds</span>
+              <span class="amenity"><i class="fa-solid fa-bath"></i> 2 Baths</span>
+              <span class="amenity"><i class="fa-solid fa-ruler-combined"></i> 980 ft²</span>
+            </div>
+            <div class="apt-footer">
+              <div class="apt-price">$3,800 <span>/ month</span></div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="apt-card reveal">
+          <div class="apt-img-wrap">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=700&q=80" alt="Coastal Penthouse" loading="lazy" />
+            <span class="apt-badge badge-new">✨ New</span>
+            <button class="apt-fav" aria-label="Save favourite"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="apt-body">
+            <div class="apt-location"><i class="fa-solid fa-location-dot"></i> South Beach, Miami</div>
+            <h3 class="apt-name">Coastal Penthouse</h3>
+            <p class="apt-desc">Luxury penthouse with panoramic ocean views, rooftop pool access, concierge service and a private wine cellar.</p>
+            <div class="apt-amenities">
+              <span class="amenity"><i class="fa-solid fa-bed"></i> 3 Beds</span>
+              <span class="amenity"><i class="fa-solid fa-bath"></i> 3 Baths</span>
+              <span class="amenity"><i class="fa-solid fa-ruler-combined"></i> 2100 ft²</span>
+            </div>
+            <div class="apt-footer">
+              <div class="apt-price">$7,500 <span>/ month</span></div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="apt-card reveal">
+          <div class="apt-img-wrap">
+            <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=700&q=80" alt="Artisan Flat" loading="lazy" />
+            <span class="apt-badge badge-available">Available</span>
+            <button class="apt-fav" aria-label="Save favourite"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="apt-body">
+            <div class="apt-location"><i class="fa-solid fa-location-dot"></i> Wicker Park, Chicago</div>
+            <h3 class="apt-name">Artisan Flat</h3>
+            <p class="apt-desc">Bright 1-bedroom with exposed brick, vintage hardwood floors and a chef's kitchen in a vibrant arts district.</p>
+            <div class="apt-amenities">
+              <span class="amenity"><i class="fa-solid fa-bed"></i> 1 Bed</span>
+              <span class="amenity"><i class="fa-solid fa-bath"></i> 1 Bath</span>
+              <span class="amenity"><i class="fa-solid fa-ruler-combined"></i> 720 ft²</span>
+            </div>
+            <div class="apt-footer">
+              <div class="apt-price">$1,950 <span>/ month</span></div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="apt-card reveal">
+          <div class="apt-img-wrap">
+            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=700&q=80" alt="Sunset Terrace" loading="lazy" />
+            <span class="apt-badge badge-hot">🔥 Hot Deal</span>
+            <button class="apt-fav" aria-label="Save favourite"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="apt-body">
+            <div class="apt-location"><i class="fa-solid fa-location-dot"></i> West Hollywood, LA</div>
+            <h3 class="apt-name">Sunset Terrace</h3>
+            <p class="apt-desc">Contemporary apartment with a wrap-around terrace, smart-home technology and resort-style building amenities.</p>
+            <div class="apt-amenities">
+              <span class="amenity"><i class="fa-solid fa-bed"></i> 2 Beds</span>
+              <span class="amenity"><i class="fa-solid fa-bath"></i> 2 Baths</span>
+              <span class="amenity"><i class="fa-solid fa-ruler-combined"></i> 1100 ft²</span>
+            </div>
+            <div class="apt-footer">
+              <div class="apt-price">$4,200 <span>/ month</span></div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="apt-card reveal">
+          <div class="apt-img-wrap">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=700&q=80" alt="Garden Retreat" loading="lazy" />
+            <span class="apt-badge badge-new">✨ New</span>
+            <button class="apt-fav" aria-label="Save favourite"><i class="fa-regular fa-heart"></i></button>
+          </div>
+          <div class="apt-body">
+            <div class="apt-location"><i class="fa-solid fa-location-dot"></i> Lincoln Park, Chicago</div>
+            <h3 class="apt-name">Garden Retreat</h3>
+            <p class="apt-desc">Peaceful garden-level apartment with private patio, fireplace and direct access to one of the city's greenest parks.</p>
+            <div class="apt-amenities">
+              <span class="amenity"><i class="fa-solid fa-bed"></i> 1 Bed</span>
+              <span class="amenity"><i class="fa-solid fa-bath"></i> 1 Bath</span>
+              <span class="amenity"><i class="fa-solid fa-ruler-combined"></i> 840 ft²</span>
+            </div>
+            <div class="apt-footer">
+              <div class="apt-price">$2,100 <span>/ month</span></div>
+              <button class="btn-view">View Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /.apartments-grid -->
+    </div>
+  </section>
+
+  <!-- =============================================
+       FEATURES SECTION
+  ============================================= -->
+  <section id="features">
+    <div class="container">
+      <div class="features-inner">
+
+        <!-- Left: image + badge -->
+        <div class="features-image reveal">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80" alt="Modern apartment interior" loading="lazy" />
+          <div class="features-image-badge">
+            <div class="fib-icon"><i class="fa-solid fa-trophy"></i></div>
+            <div class="fib-text">
+              <strong>12K+</strong>
+              <span>Happy Residents</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: text + feature cards -->
+        <div class="reveal">
+          <span class="section-label">Why Choose Us</span>
+          <h2 class="section-title">Everything You<br>Need, In One Place</h2>
+          <p class="section-sub">We take the hassle out of renting — from your first search to your first morning in your new home.</p>
+
+          <div class="features-list">
+
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+              <div>
+                <div class="feat-title">Prime Locations</div>
+                <p class="feat-desc">Every listing is handpicked for walkability, transit access and neighbourhood quality. You're always at the centre of the action.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-tag"></i></div>
+              <div>
+                <div class="feat-title">Affordable, Transparent Prices</div>
+                <p class="feat-desc">Flat-rate pricing with zero hidden fees. What you see is exactly what you pay — including utilities in select units.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <div>
+                <div class="feat-title">Easy Online Booking</div>
+                <p class="feat-desc">Reserve your apartment in minutes with our frictionless digital process — no stacks of paperwork, no waiting days for approval.</p>
+              </div>
+            </div>
+
+            <div class="feature-item">
+              <div class="feat-icon"><i class="fa-solid fa-headset"></i></div>
+              <div>
+                <div class="feat-title">24 / 7 Support</div>
+                <p class="feat-desc">Our dedicated team is always on call. Maintenance request at midnight? We've got it covered around the clock.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       TESTIMONIALS SECTION
+  ============================================= -->
+  <section id="testimonials">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <div>
+          <span class="section-label">Resident Stories</span>
+          <h2 class="section-title">What Our Renters Say</h2>
+        </div>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal">
+          <div class="t-quote">"</div>
+          <p class="t-text">Nido made my cross-country move completely stress-free. I found and booked my apartment entirely online — the virtual tour was just like being there in person.</p>
+          <div class="t-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="t-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" alt="Sarah M." loading="lazy" />
+            <div>
+              <div class="t-name">Sarah M.</div>
+              <div class="t-role">Designer, New York</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="t-quote">"</div>
+          <p class="t-text">The pricing is genuinely transparent — no surprise fees on move-in day. My apartment has been everything the listing promised and more.</p>
+          <div class="t-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <div class="t-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80" alt="James L." loading="lazy" />
+            <div>
+              <div class="t-name">James L.</div>
+              <div class="t-role">Software Engineer, Chicago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal">
+          <div class="t-quote">"</div>
+          <p class="t-text">When my heater broke at 11 PM in January, the Nido team had a technician at my door within two hours. That level of service keeps me renewing every year.</p>
+          <div class="t-stars">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <div class="t-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" alt="Priya K." loading="lazy" />
+            <div>
+              <div class="t-name">Priya K.</div>
+              <div class="t-role">Doctor, Miami</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       CONTACT SECTION
+  ============================================= -->
+  <section id="contact">
+    <div class="container">
+      <div class="contact-inner">
+
+        <!-- Info -->
+        <div class="reveal">
+          <span class="section-label">Get In Touch</span>
+          <h2 class="section-title" style="color:var(--white)">Let's Find Your<br>Dream Home</h2>
+          <p class="contact-sub">Have questions or ready to schedule a tour? Drop us a message — our team responds within a few hours.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              350 Fifth Avenue, Suite 4100, New York, NY 10118
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-phone"></i>
+              +1 (800) 643-6583
+            </div>
+            <div class="contact-detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              hello@nidorentals.com
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal" id="contactFormWrap">
+          <form id="contactForm" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" placeholder="Alex" required />
+              </div>
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" placeholder="Johnson" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="alex@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">I'm interested in…</label>
+              <input type="text" id="subject" placeholder="e.g. 2-bedroom in Brooklyn" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Tell us more about what you're looking for…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Send Message <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+          </form>
+
+          <!-- Success state -->
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check" style="display:block;"></i>
+            <strong style="color:var(--white);font-size:1.2rem;">Message sent!</strong>
+            <p>We'll get back to you within 24 hours. 🏠</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =============================================
+       FOOTER
+  ============================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-copy">
+          © 2025 <span>Nido</span> Rentals. All rights reserved. Made with ♥ for renters everywhere.
+        </p>
+        <div class="footer-socials">
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-top button -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+ <script src="index.js"></script>
+
+</body>
+</html>
